@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <!-- 切换器 -->
+    <ImageSwitcher
+        android:id="@+id/ag_is_switcher"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        />
+    
+    <!-- 水平滑动 -->
+    <Gallery
+        android:id="@+id/ag_g_gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:spacing="3dp"
+        android:unselectedAlpha="0.6"
+        />
+
+   
+
+</LinearLayout>

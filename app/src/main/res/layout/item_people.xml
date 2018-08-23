@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#33333333"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/ip_iv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/u50" />
+
+    <TextView
+        android:id="@+id/ip_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/ip_iv_head"
+        android:text="张三"
+        android:textColor="#ff00ff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ip_tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ip_tv_name"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/ip_iv_head"
+        android:text="今天天气今天天气今天天气今天天气今天天气今天天气今天天气" />
+
+    <TextView
+        android:id="@+id/ip_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ip_tv_name"
+        android:text="今天12:30" />
+
+</RelativeLayout>

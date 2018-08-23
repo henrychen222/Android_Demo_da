@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+    <!-- 
+    ProgressBar
+    @android:style/Widget.ProgressBar.Inverse 旋转进度条
+    @android:style/Widget.ProgressBar.Horizontal 水平进度条
+	 -->
+	
+	<ProgressBar 
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp"
+    	style="@android:style/Widget.ProgressBar.Inverse"
+	    />
+	
+	<RelativeLayout  
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="10dp">
+    	
+	<ProgressBar 
+	     android:id="@+id/ar_pb_progress"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_centerVertical="true"
+    	android:layout_toLeftOf="@+id/ar_bn_download"
+    	style="@android:style/Widget.ProgressBar.Horizontal"
+	    />
+	
+	<Button 
+	    android:id="@+id/ar_bn_download"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentRight="true"
+    	android:text="下载"
+	    />
+    
+    
+    </RelativeLayout>
+    
+	<SeekBar 
+	    android:id="@+id/ar_sb_seek"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:thumb="@mipmap/bar"
+    	android:max="255"
+    	android:progress="0"
+	    />
+	<!-- 
+	android:numStars 星星数量
+	android:rating   默认选中星星数量
+	android:stepSize 最小步伐
+	 -->
+	<RatingBar 
+	    android:id="@+id/ap_rb_rating"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:numStars="5"
+       android:rating="2"
+       android:stepSize="0.5"
+       />
+	
+	<ImageView 
+	    android:id="@+id/ar_iv_img"
+	    android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:src="@mipmap/scrollview_header"
+    	android:scaleType="centerCrop"
+	    />
+	
+   
+    
+
+</LinearLayout>

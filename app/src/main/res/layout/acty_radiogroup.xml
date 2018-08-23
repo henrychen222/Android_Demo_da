@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#55555555"
+    >
+    
+    <RadioGroup 
+        android:id="@+id/ar_rg_group"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:checkedButton="@+id/ar_rb_woman"
+    	>
+    	
+    	<RadioButton 
+    	    android:id="@+id/ar_rb_man"
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="男"/>
+    	
+    	<RadioButton 
+    	    android:id="@+id/ar_rb_woman"
+    	    android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="女"/>
+        
+    </RadioGroup>
+    
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal">
+    	
+        <CheckBox 
+            android:id="@+id/ar_cb_read"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:checked="true"
+    		android:text="读书"/>
+        
+        <CheckBox 
+            android:id="@+id/ar_cb_swim"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:checked="true"
+    		android:text="游泳"/>
+        
+        <CheckBox 
+            android:id="@+id/ar_cb_net"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:checked="true"
+    		android:text="上网"/>
+        
+        
+        <CheckBox 
+            android:id="@+id/ar_cb_game"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="游戏"/>
+        
+    </LinearLayout>
+    
+    
+    <ToggleButton 
+        android:id="@+id/ar_tb_toggle"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:checked="false"
+    	android:textOn="开"
+    	android:textOff="关"
+        />
+
+    
+
+</LinearLayout>

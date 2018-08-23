@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <RelativeLayout 
+        android:id="@+id/ape_rl_top"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" 
+    android:background="#00ffff">
+    <Button
+        android:id="@+id/ape_bn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="返回"
+        />
+        
+    
+    
+     <TextView
+        android:id="@+id/ape_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="成员编辑界面"
+        />
+     
+     
+     <Button
+        android:id="@+id/ape_bn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="编辑"
+        />
+        
+        
+   </RelativeLayout>
+   
+    
+    <GridView
+        android:id="@+id/ape_gv_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ape_rl_top"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="4"
+        />
+
+   
+
+</RelativeLayout>

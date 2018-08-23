@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+	<TextView
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="生日："
+	    />
+	
+	<DatePicker 
+	    android:id="@+id/adt_dp_date"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:startYear="1910"
+    	android:endYear="2016"
+	    />
+    
+	</LinearLayout>
+	
+    
+     <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+	<TextView
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="时间："
+	    />
+	
+	<TimePicker 
+	    android:id="@+id/adt_tp_time"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:startYear="1910"
+    	android:endYear="2016"
+	    />
+    
+	</LinearLayout>
+	
+    <TextView
+        android:id="@+id/adt_tv_date"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="xx"
+	    />
+    
+    <TextView
+        android:id="@+id/adt_tv_time"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="xx"
+	    />
+    
+    <Button
+        android:id="@+id/adt_bn_getTime"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="获取日期和时间"
+	    />
+    
+
+</LinearLayout>
+</ScrollView>

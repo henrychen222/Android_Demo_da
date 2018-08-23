@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.weichen.myapplication"
+    android:versionCode="1"
+    android:versionName="V1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- 读sd卡权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 写sd卡权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 访问网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.example.weichen.myapplication.MainActy"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="com.example.weichen.myapplication.widget.MyTextViewActy">
+
+        </activity>
+
+        <activity android:name="com.example.weichen.myapplication.widget.MyEditTextActy">
+
+        </activity>
+
+        <!-- MyButton页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyButtonActy">
+
+        </activity>
+
+        <!-- MyButton页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyRadioGroupActy">
+
+        </activity>
+
+        <!-- AutoCompleteTextView页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyAutoCompleteTextViewActy">
+
+        </activity>
+
+        <!-- DatePicker、TimePicker页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyDateTimePickerActy"
+            android:theme="@android:style/Theme.Light">
+
+        </activity>
+
+        <!-- ProgressBar、SeekBar、RatingBar页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyProgressActy">
+
+        </activity>
+
+        <!-- ListView页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyListViewActy">
+
+        </activity>
+
+        <!-- 注册页面 -->
+        <activity android:name="com.example.weichen.myapplication.acty.RegisterActy"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+
+        </activity>
+
+        <!-- 个人中心页面 -->
+        <activity android:name="com.example.weichen.myapplication.acty.PersonalCenterActy">
+
+        </activity>
+
+        <!-- GridView页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyGridViewActy">
+
+        </activity>
+
+        <!-- Gallery页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyGalleryActy">
+
+        </activity>
+
+        <!-- 群成员编辑页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyPeopleEditActy">
+
+        </activity>
+
+        <!-- 可展开的列表控件页面 -->
+        <activity android:name="com.example.weichen.myapplication.widget.MyExpandableListView">
+
+        </activity>
+
+        <!-- 页面 -->
+        <activity android:name="com.example.weichen.myapplication.acty.StartActivityForResultActy">
+
+        </activity>
+
+        <!-- 页面 -->
+        <activity android:name="com.example.weichen.myapplication.acty.StartActivityForResultSecondActy">
+
+        </activity>
+
+        <!-- 页面 -->
+        <activity android:name="com.example.weichen.myapplication.acty.StartActivityForResultThreeActy">
+
+        </activity>
+        <!-- 页面 -->
+        <activity android:name="com.example.weichen.myapplication.acty.TakePhotosActy">
+
+        </activity>
+
+        <!-- 页面 -->
+        <activity android:name="com.example.weichen.myapplication.acty.SharedPreferencesActy">
+
+        </activity>
+
+        <!-- AllDialogActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.AllDialogActy">
+        </activity>
+
+        <!-- DialogTipActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.DialogTipActy">
+        </activity>
+
+        <!-- DialogSingleChooseActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.DialogSingleChooseActy">
+        </activity>
+
+        <!-- DialogSingleChooseActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.DialogMultiChooseActy">
+        </activity>
+
+        <!-- DialogCustomListActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.DialogCustomListActy">
+        </activity>
+
+        <!-- DialogDateTimePickerActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.DialogDateTimePickerActy"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+        </activity>
+
+        <!-- DialogLoginActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.DialogLoginActy" >
+        </activity>
+
+        <!-- PopupWindowActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.PopupWindowActy" >
+        </activity>
+
+        <!-- ProgressDialgActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.ProgressDialgActy" >
+        </activity>
+
+        <!-- MyDialogActy -->
+        <activity android:name="com.example.weichen.myapplication.dialog.MyDialogActy" >
+        </activity>
+
+        <!-- DownloadBitmapActy -->
+        <activity android:name="com.example.weichen.myapplication.acty.DownloadBitmapActy" >
+        </activity>
+
+        <!-- DownloadBitmapActy -->
+        <activity android:name="com.example.weichen.myapplication.acty.AActy" >
+        </activity>
+        <activity android:name="com.example.weichen.myapplication.acty.BActy" >
+        </activity>
+
+        <!-- 下载图片 -->
+        <activity android:name="com.example.weichen.myapplication.acty.listener.HandlerActy" />
+        <!-- 下载图片，异步加载 -->
+        <activity android:name="com.example.weichen.myapplication.acty.listener.SyncImageLoaderActy" />
+
+        <!-- 小偷的故事 -->
+        <activity android:name="com.example.weichen.myapplication.acty.listener.ThiefActy" />
+        <!-- 逐帧动画 -->
+        <activity android:name="com.example.weichen.myapplication.acty.anim.FrameActy" />
+        <!-- 补间动画 -->
+        <activity android:name="com.example.weichen.myapplication.acty.anim.TweenActy" />
+        <!-- 蝴蝶飞 -->
+        <activity android:name="com.example.weichen.myapplication.acty.anim.ButterflyActy" />
+
+
+
+
+        <!-- 数据库 -->
+        <activity android:name="com.example.weichen.myapplication.acty.DataBaseActy" />
+
+
+        <!-- 音乐列表 -->
+        <activity android:name="com.example.weichen.myapplication.acty.service.MusicListActy" />
+        <activity android:name="com.example.weichen.myapplication.acty.service.BindServerPlayMusicActy" />
+        <!-- 音乐服务 -->
+        <service android:name="com.example.weichen.myapplication.service.MyService" >
+            <!-- android:priority [-1000, 1000] 越大优先级越高-->
+            <intent-filter android:priority="900">
+                <action android:name="com.xiaozhuang.music"/>
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.example.weichen.myapplication.acty.webservice.WebServiceActy" />
+
+
+    </application>
+
+</manifest>

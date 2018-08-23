@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    
+    <string-array name="list">
+        <item>Java C</item>
+        <item>java Android</item>
+        <item>Java C#</item>
+        <item>Java C++</item>
+        <item>Java VB</item>
+    </string-array>
+    
+</resources>

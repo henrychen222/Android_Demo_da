@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <TextView 
+        android:id="@+id/as_tv_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="SharedPreference演示"/>
+    
+    
+    <EditText 
+        android:id="@+id/as_et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入登录名"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+    
+     <EditText 
+        android:id="@+id/as_et_pass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:imeOptions="actionNext"
+        android:singleLine="true"/>
+     
+     <!-- 
+     android:numeric 
+     integer（正整数）、
+     signed（带符号整数，有正负）
+     decimal(浮点数)。
+      -->
+     <EditText 
+        android:id="@+id/as_et_float"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入Float值"
+        android:numeric="decimal"
+        android:imeOptions="actionDone"
+        android:singleLine="true"/>
+     
+     <Button 
+        android:id="@+id/as_bn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存"/>
+     
+     <Button 
+        android:id="@+id/as_bn_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取"/>
+     
+     
+     <TextView 
+        android:id="@+id/as_tv_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="xx"/>
+     
+     
+
+</LinearLayout>

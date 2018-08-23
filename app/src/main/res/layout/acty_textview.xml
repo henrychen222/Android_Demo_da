@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!-- 跑马灯模式 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+       	android:marqueeRepeatLimit="marquee_forever"
+        android:text="在获取到焦点时，走马灯效果在获取到焦点时，走马灯效果在获取到焦点时，走马灯效果在获取到焦点时，走马灯效果" 
+        android:textSize="20sp"
+        android:textColor="#FF0000"/>
+    
+    <!-- 设置识别邮箱链接，自动跳转到系统打开邮件软件 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:text="点击wangrui@jsmstc.com试试"
+        android:textSize="20sp"
+        />
+    
+    <!-- android:autoLink="phone" 设置识别电话号码，自动跳转到系统拨号页面-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13515119178"
+        android:textSize="20sp"
+        />
+    
+    <!--android:autoLink="web" 设置识别web网址的，自动跳转到浏览器打开链接 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.baidu.com"
+        android:textSize="20sp"
+        android:textColor="#0000FF"
+        />
+    
+    <!-- android:autoLink="all" 设置自动识别链接，为匹配所有 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.baidu.com"
+        android:textSize="20sp"
+        android:textColor="#0000FF"
+        />
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我爱你中国"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我爱你中国"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我爱你中国"
+        android:textSize="20sp"
+        android:shadowColor="#0000ff"
+        android:shadowDx="5.0"
+        android:shadowDy="3.0"
+        android:shadowRadius="5.0"
+        />
+    
+</LinearLayout>

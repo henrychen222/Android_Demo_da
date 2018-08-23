@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="10dp">
+
+    
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="requestCode示例："
+            android:textSize="20sp" />
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页面一：requestCode=1" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ass_et_content1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/ass_btn_back1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="页面一：requestCode=2" />
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ass_et_content2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/ass_btn_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+    
+     
+     
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="resultCode示例："
+            android:textSize="20sp" />
+     
+     
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="页面二：resultCode" />
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ass_et_content3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/ass_btn_back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回" />
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>

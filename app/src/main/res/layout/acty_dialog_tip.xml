@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/adt_btn_userCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人中心" />
+        
+        <Button
+            android:id="@+id/adt_btn_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="时间选择器弹框" />
+        
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/adt_tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+</LinearLayout>

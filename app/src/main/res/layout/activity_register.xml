@@ -1,0 +1,377 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/re_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#33CCFF" >
+
+            <Button
+                android:id="@+id/fanhui"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:background="#33E0FEFE"
+                android:text="返回"
+                android:textColor="#FCFCFC"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="用户注册"
+                android:textColor="#FCFCFC"
+                android:textSize="20sp" />
+
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:background="#33E0FEFE"
+                android:text="返回"
+                android:textColor="#FCFCFC"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF9966"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="本店推出新南京烤鸭产品，点击本链接只需5折"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 用 户 名： " />
+
+            <EditText
+                android:id="@+id/am_username"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:hint="请输入用户名" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录密码：" />
+
+            <EditText
+                android:id="@+id/am_password"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:hint="请输入密码6-12位"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:password="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认密码：" />
+
+            <EditText
+                android:id="@+id/affirmpwd"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="请确认输入密码6-12位"
+                android:password="true" >
+            </EditText>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/ar_rg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  性    别：" />
+
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="女" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="出 生 地  " />
+
+            <Spinner
+                android:id="@+id/am_province"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shapezhijiao"
+                android:gravity="center_horizontal" />
+
+            <Spinner
+                android:id="@+id/am_city"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shapezhijiao"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 生  日 " />
+
+            <DatePicker
+                android:id="@+id/ab_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:endYear="2016"
+                android:startYear="2011" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的爱好" />
+
+            <CheckBox
+                android:id="@+id/read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="读书" />
+
+            <CheckBox
+                android:id="@+id/coding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编码" />
+
+            <CheckBox
+                android:id="@+id/sing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="唱歌" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="67dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/swim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游泳" />
+
+            <CheckBox
+                android:id="@+id/game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="游戏" />
+
+            <CheckBox
+                android:id="@+id/sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体育" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/am_comments"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="自我评价"
+                android:textColor="@color/color2" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="勤劳"
+                    android:textColor="@color/color2"
+                    android:textSize="20sp" />
+
+                <RatingBar
+                    android:id="@+id/ab_ratingbar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="上进"
+                    android:textColor="@color/color2"
+                    android:textSize="20sp" />
+
+                <RatingBar
+                    android:id="@+id/ab_ratingbar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="勇敢"
+                    android:textColor="@color/color2"
+                    android:textSize="20sp" />
+
+                <RatingBar
+                    android:id="@+id/ab_ratingbar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:numStars="5"
+                    android:rating="3.5"
+                    android:stepSize="0.5" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ab_login"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector"
+            android:text="立即注册"
+            android:textColor="@color/color"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#55555555"
+    >
+    
+    
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:background="@drawable/pub_bg_top"
+    >
+    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:text="个人资料"
+        />
+        
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/row"
+        />
+        
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/as_rl_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical"
+    android:background="@drawable/pub_bg_bottom"
+    >
+    
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:text="大师解运"
+        />
+        
+        <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/row"
+        />
+        
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

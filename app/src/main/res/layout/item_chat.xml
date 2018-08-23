@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<RelativeLayout 
+    android:id="@+id/ic_rl_left"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/ic_iv_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/u50" />
+
+    <TextView
+        android:id="@+id/ic_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_toRightOf="@+id/ic_iv_head"
+        android:text="张三"
+        android:textColor="#ff00ff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ic_tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ic_tv_name"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="50dp"
+        android:layout_toRightOf="@+id/ic_iv_head"
+        android:text="今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气" />
+
+</RelativeLayout>
+
+
+<RelativeLayout 
+    android:id="@+id/ic_rl_right"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/ic_iv_head2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/u50" />
+
+    <TextView
+        android:id="@+id/ic_tv_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ic_iv_head2"
+        android:layout_margin="3dp"
+        android:text="张三"
+        android:textColor="#ff00ff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/ic_tv_msg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ic_iv_head2"
+        android:layout_below="@+id/ic_tv_name2"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="3dp"
+        android:text="今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气今天天气" />
+
+</RelativeLayout>
+</LinearLayout>

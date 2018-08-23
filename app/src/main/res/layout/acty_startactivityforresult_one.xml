@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="10dp">
+
+    
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="requestCode" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+<Button
+            android:id="@+id/aso_btn_goto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择国家" />
+        <TextView
+            android:id="@+id/aso_et_content1"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            />
+
+        
+
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="页面一：resultCode" />
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/aso_btn_goto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择省" />
+        
+        <TextView
+            android:id="@+id/aso_et_content2"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            />
+
+    </LinearLayout>
+    
+     
+     
+     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="页面二：resultCode" />
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        
+        <Button
+            android:id="@+id/aso_btn_goto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择国家" />
+        
+        <TextView
+            android:id="@+id/aso_et_content3"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            />
+
+    </LinearLayout>
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        
+        <Button
+            android:id="@+id/aso_btn_goto4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请选择省、市" />
+        
+        <TextView
+            android:id="@+id/aso_et_content4"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            />
+
+    </LinearLayout>
+
+    
+
+</LinearLayout>
